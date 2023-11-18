@@ -1,5 +1,6 @@
 footer {
-  /* border: 2px solid red; */
+  vertical-align: bottom;
+  height: 100%;
   width: 100%;
   background-color: #292f47;
 }
