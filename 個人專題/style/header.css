@@ -4,7 +4,8 @@ header {
   align-items: center;
   position: absolute;
   z-index: 3;
-  /* background-color: #aaa; */
+  position: sticky;
+  background-color: #292f47;
 }
 .logo {
   flex-grow: 1;
