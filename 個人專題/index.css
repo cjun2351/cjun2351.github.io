@@ -56,8 +56,16 @@ header nav {
   align-items: center;
   justify-content: center;
 }
-#banner .container {
+#banner .banner-container {
   max-width: 1200px;
+}
+.container {
+  margin: 150px auto;
+  max-width: 1200px;
+}
+.container h2 {
+  font-size: 3em;
+  letter-spacing: 0.15rem;
 }
 .banner-slogan {
   display: flex;
@@ -75,30 +83,21 @@ header nav {
 #about-us {
   width: 100%;
 }
-#about-us .container {
-  margin: 150px auto;
-  max-width: 1200px;
-}
-#about-us .container h2 {
-  font-size: 3em;
-  letter-spacing: 0.15rem;
-}
 
 .about-us-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-evenly;
 }
 .about-us-content .pic {
   background-color: #fff;
-  max-width: 40%;
+  max-width: 45%;
 }
 .about-us-content .pic img {
   vertical-align: middle;
   width: 100%;
   padding: 25px 25px 50px 25px;
-  min-width: 100%;
-  min-height: 100%;
 }
 
 .about-us-intro {
@@ -132,20 +131,13 @@ header nav {
 #recent-exhibitions {
   width: 100%;
 }
-#recent-exhibitions .container {
-  margin: 150px auto;
-  max-width: 1200px;
-}
-#recent-exhibitions .container h2 {
-  font-size: 3em;
-  letter-spacing: 0.15rem;
-}
+
 .card-link {
   text-decoration: none;
 }
 .exhibition-card-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -176,14 +168,6 @@ header nav {
 }
 #news {
   width: 100%;
-}
-#news .container {
-  max-width: 1200px;
-  margin: 50px auto;
-}
-#news .container h2 {
-  font-size: 3em;
-  letter-spacing: 0.15rem;
 }
 .news-content {
   width: 100%;
@@ -217,13 +201,7 @@ td {
 #contact-us {
   width: 100%;
 }
-#contact-us .container {
-  max-width: 1200px;
-  margin: 150px auto;
-}
-#contact-us .container h2 {
-  font-size: 3em;
-}
+
 .contact-us-form form {
   display: flex;
   flex-direction: column;
