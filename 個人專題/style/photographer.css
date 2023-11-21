@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+body {
+  min-height: 100%;
+  background-color: #0b1a2f;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.container {
+  max-width: 1200px;
+  margin: 150px auto;
+}
+#page-title .container .title h2 {
+  text-align: center;
+  font-size: 3em;
+}
+#page-title .container .title {
+  border-bottom: 3px solid #fff;
+}
+.outstanding-title h3 {
+  font-size: 2em;
+}
+.photographer-3-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.photographer-2-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+.photographer-card .pic {
+  background-color: #fff;
+}
+.photographer-card .pic img {
+  vertical-align: middle;
+  width: 100%;
+  padding: 15px 15px 30px 15px;
+}
+.photographer-card a {
+  text-decoration: none;
+}
+.name-content {
+  color: #fff;
+}
+.name-content h4 {
+  font-size: 1.75em;
+  padding: 10px 0;
+  margin: 0;
+}
+.name-content p {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 10px 0;
+}
+.newbie-title h3 {
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .photographer-3-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .photographer-2-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+}

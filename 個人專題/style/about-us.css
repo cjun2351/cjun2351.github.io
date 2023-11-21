@@ -16,11 +16,11 @@ body {
   max-width: 1200px;
   margin: 150px auto;
 }
-.container h2 {
+#page-title .container .title h2 {
   text-align: center;
   font-size: 3em;
 }
-.container .title {
+#page-title .container .title {
   border-bottom: 3px solid #fff;
 }
 .about-us-list {
