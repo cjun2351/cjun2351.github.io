@@ -19,9 +19,12 @@ body {
 #page-title .container .title h2 {
   text-align: center;
   font-size: 3em;
+  letter-spacing: 0.1em;
 }
 #page-title .container .title {
   border-bottom: 3px solid #fff;
+  max-width: 80%;
+  margin: auto;
 }
 .about-us-list {
   display: flex;

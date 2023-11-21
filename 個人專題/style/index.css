@@ -41,9 +41,17 @@ header nav {
 .nav-list li a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
 }
-
+.container {
+  margin: 150px auto;
+  max-width: 1200px;
+}
+.container h2 {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+}
 #banner {
   width: 100%;
   height: 800px;
@@ -55,17 +63,21 @@ header nav {
   align-items: center;
   justify-content: center;
 }
+
 #banner .container {
   max-width: 1200px;
+}
+#banner .container h2 {
+  font-size: 5em;
+  letter-spacing: 0.1em;
+  font-weight: 700;
 }
 .banner-slogan {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  font-size: 5em;
   margin: 0;
-  letter-spacing: 0.15rem;
-  font-weight: 700;
+
   font-family: "Sen", sans-serif;
 }
 .banner-slogan span:last-child {
@@ -74,45 +86,44 @@ header nav {
 #about-us {
   width: 100%;
 }
-#about-us .container {
+/* #about-us .container {
   margin: 150px auto;
   max-width: 1200px;
-}
+} */
 #about-us .container h2 {
   font-size: 3em;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1em;
 }
 
 .about-us-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 .about-us-content .pic {
   background-color: #fff;
-  max-width: 40%;
+  max-width: 45%;
 }
 .about-us-content .pic img {
   vertical-align: middle;
   width: 100%;
   padding: 25px 25px 50px 25px;
-  min-width: 100%;
-  min-height: 100%;
 }
 
 .about-us-intro {
   display: flex;
   flex-direction: column;
   max-width: 50%;
-  padding: 20px;
-  margin: 0 20px;
+  /* padding: 20px; */
+  /* margin: 0 20px; */
 }
 .about-us-intro .title h3 {
   font-size: 2em;
 }
 .about-us-intro .content p {
   font-size: 1.25em;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1em;
   line-height: 1.5em;
 }
 .about-us-intro .more-button {
@@ -131,14 +142,14 @@ header nav {
 #recent-exhibitions {
   width: 100%;
 }
-#recent-exhibitions .container {
+/* #recent-exhibitions .container {
   margin: 150px auto;
   max-width: 1200px;
 }
 #recent-exhibitions .container h2 {
   font-size: 3em;
-  letter-spacing: 0.15rem;
-}
+  letter-spacing: 0.1em;
+} */
 .card-link {
   text-decoration: none;
 }
@@ -169,21 +180,23 @@ header nav {
 .exhibition-intro .title {
   font-size: 1.5em;
   margin: 10px 0;
+  letter-spacing: 0.1em;
 }
 .exhibition-intro .date {
   font-size: 1.25em;
+  letter-spacing: 0.1em;
 }
 #news {
   width: 100%;
 }
-#news .container {
+/* #news .container {
   max-width: 1200px;
   margin: 50px auto;
 }
 #news .container h2 {
   font-size: 3em;
-  letter-spacing: 0.15rem;
-}
+  letter-spacing: 0.1em;
+} */
 .news-content {
   width: 100%;
   border-collapse: collapse;
@@ -192,6 +205,7 @@ header nav {
 td {
   font-size: 1.5em;
   padding: 50px 20px;
+  letter-spacing: 0.1em;
 }
 .news-content td:last-of-type {
   text-align: center;
@@ -205,24 +219,20 @@ td {
   font-size: 1em;
 }
 
-.news-content tr:first-child {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+.news-content tr {
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
 }
-.news-content tr:nth-child(n + 2) {
-  border-bottom: 1px solid #fff;
-}
-
 #contact-us {
   width: 100%;
 }
-#contact-us .container {
+/* #contact-us .container {
   max-width: 1200px;
   margin: 150px auto;
 }
 #contact-us .container h2 {
   font-size: 3em;
-}
+} */
 .contact-us-form form {
   display: flex;
   flex-direction: column;
@@ -239,6 +249,7 @@ td {
 .input label {
   flex-grow: 1;
   font-size: 1.25em;
+  letter-spacing: 0.1em;
 }
 .input input {
   height: 40px;

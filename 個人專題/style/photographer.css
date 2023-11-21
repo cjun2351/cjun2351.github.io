@@ -19,12 +19,16 @@ body {
 #page-title .container .title h2 {
   text-align: center;
   font-size: 3em;
+  letter-spacing: 0.1em;
 }
 #page-title .container .title {
   border-bottom: 3px solid #fff;
+  max-width: 80%;
+  margin: auto;
 }
 .outstanding-title h3 {
   font-size: 2em;
+  letter-spacing: 0.1em;
 }
 .photographer-3-list {
   display: flex;
@@ -54,14 +58,17 @@ body {
   font-size: 1.75em;
   padding: 10px 0;
   margin: 0;
+  letter-spacing: 0.1em;
 }
 .name-content p {
   font-size: 1.25em;
   margin: 0;
   padding: 10px 0;
+  letter-spacing: 0.1em;
 }
 .newbie-title h3 {
   font-size: 2em;
+  letter-spacing: 0.1em;
 }
 
 @media (max-width: 768px) {

@@ -19,10 +19,14 @@ body {
 #page-title .container h2 {
   text-align: center;
   font-size: 3em;
+  letter-spacing: 0.1em;
 }
 #page-title .container .title {
   border-bottom: 3px solid #fff;
+  max-width: 80%;
+  margin: auto;
 }
+
 .hall-intro-content {
   display: flex;
   flex-direction: column;
@@ -35,14 +39,14 @@ body {
 }
 .intro-content .intro-title h3 {
   margin: 20px 0 15px 0;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
 }
 .intro-content .intro-para {
   text-align: center;
   max-width: 50%;
   margin: auto;
   font-size: 1.25em;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   line-height: 1.5em;
 }
 
@@ -101,7 +105,7 @@ body {
   text-align-last: left;
   border-collapse: collapse;
   font-size: 1.25em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 .info-table table tr {
   border-top: 3px solid #fff;
