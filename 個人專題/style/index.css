@@ -45,11 +45,12 @@ header nav {
   letter-spacing: 0.1em;
 }
 .container {
-  margin: 150px auto;
+  margin: auto;
+  padding: 50px 0;
   max-width: 1200px;
 }
 .container h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   letter-spacing: 0.1em;
 }
 #banner {
@@ -66,8 +67,9 @@ header nav {
 
 #banner .container {
   max-width: 1200px;
+  padding: 0;
 }
-#banner .container h2 {
+#banner .container h1 {
   font-size: 5em;
   letter-spacing: 0.1em;
   font-weight: 700;
@@ -86,14 +88,11 @@ header nav {
 #about-us {
   width: 100%;
 }
-/* #about-us .container {
-  margin: 150px auto;
-  max-width: 1200px;
-} */
-#about-us .container h2 {
+
+/* #about-us .container h2 {
   font-size: 3em;
   letter-spacing: 0.1em;
-}
+} */
 
 .about-us-content {
   display: flex;
@@ -119,7 +118,7 @@ header nav {
   /* margin: 0 20px; */
 }
 .about-us-intro .title h3 {
-  font-size: 2em;
+  font-size: 1.75em;
 }
 .about-us-intro .content p {
   font-size: 1.25em;
@@ -203,7 +202,7 @@ header nav {
 }
 .news-content th,
 td {
-  font-size: 1.5em;
+  font-size: 1.25em;
   padding: 50px 20px;
   letter-spacing: 0.1em;
 }
@@ -236,7 +235,7 @@ td {
 .contact-us-form form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
 }
 .contact-us-form .input {
   display: flex;
@@ -247,7 +246,8 @@ td {
   align-items: start;
 }
 .input label {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  width: 150px;
   font-size: 1.25em;
   letter-spacing: 0.1em;
 }
@@ -256,8 +256,8 @@ td {
 }
 .input input,
 textarea {
-  min-width: 90%;
-  resize: none;
+  width: 100%;
+  /* resize: none; */
   border-radius: 5px;
   font-size: 1.25em;
 }

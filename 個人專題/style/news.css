@@ -25,7 +25,8 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 150px auto;
+  margin: auto;
+  padding: 50px 0;
 }
 #news {
   width: 100%;
@@ -36,7 +37,7 @@ body {
 }
 .news-content th,
 td {
-  font-size: 1.5em;
+  font-size: 1.25em;
   padding: 50px 20px;
   text-align: left;
   letter-spacing: 0.1em;
