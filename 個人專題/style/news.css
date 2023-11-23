@@ -46,6 +46,7 @@ td {
   text-align: center;
 }
 .news-content td .more-button a {
+  font-family: "Sen";
   border-radius: 5px;
   background-color: #c89951;
   padding: 10px 20px;
