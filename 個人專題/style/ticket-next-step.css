@@ -125,11 +125,11 @@ table button {
   color: #fff;
   cursor: pointer;
 }
-.next-step-button {
+.step-button {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
-.next-step-button a {
+.button a {
   display: flex;
   align-items: center;
   justify-content: center;

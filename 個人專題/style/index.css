@@ -257,7 +257,7 @@ td {
 .input input,
 textarea {
   width: 100%;
-  /* resize: none; */
+  resize: none;
   border-radius: 5px;
   font-size: 1.25em;
 }
