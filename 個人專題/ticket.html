@@ -113,7 +113,7 @@
                 <td class="ticket-price">NTD 300</td>
                 <td class="ticket-quantity">
                   <button class="adult-minus minus">-</button
-                  ><input type="number" class="adult-input" /><button
+                  ><input type="number" class="adult-input" value="0" /><button
                     class="adult-plus plus"
                   >
                     +
@@ -125,7 +125,7 @@
                 <td class="ticket-price">NTD 150</td>
                 <td class="ticket-quantity">
                   <button class="half-minus minus">-</button
-                  ><input type="number" class="half-input" /><button
+                  ><input type="number" class="half-input" value="0" /><button
                     class="half-plus plus"
                   >
                     +
@@ -137,17 +137,89 @@
                 <td class="ticket-price">NTD 100</td>
                 <td class="ticket-quantity">
                   <button class="children-minus minus">-</button
-                  ><input type="number" class="children-input" /><button
-                    class="children-plus plus"
-                  >
-                    +
-                  </button>
+                  ><input
+                    type="number"
+                    class="children-input"
+                    value="0"
+                  /><button class="children-plus plus">+</button>
                 </td>
               </tr>
             </table>
           </div>
-          <div class="next-step-button">
-            <a href="ticket-next-step.html">下一步</a>
+          <div class="next-step-button button"><span>下一步</span></div>
+        </div>
+      </section>
+      <section id="ticket-fill-info">
+        <div class="container">
+          <div class="buying-step">
+            <div class="step">選擇票種</div>
+            <div class="current-step step">繳費資訊</div>
+          </div>
+          <div class="buying-table-info">
+            <table>
+              <tr>
+                <th class="next-step-ticket-type">票種</th>
+                <th class="next-step-ticket-quantity">數量</th>
+                <th class="next-step-ticket-price">金額</th>
+              </tr>
+              <tr>
+                <td class="next-step-ticket-type">成人票</td>
+                <td class="next-step-ticket-quantity">1</td>
+                <td class="next-step-ticket-price">NTD 300</td>
+              </tr>
+              <tr>
+                <td class="next-step-ticket-type">半票</td>
+                <td class="next-step-ticket-quantity">0</td>
+                <td class="next-step-ticket-price">NTD 0</td>
+              </tr>
+              <tr>
+                <td class="next-step-ticket-type">兒童票</td>
+                <td class="next-step-ticket-quantity">2</td>
+                <td class="next-step-ticket-price">NTD 200</td>
+              </tr>
+              <tr>
+                <td class="next-step-ticket-total-price">總金額</td>
+                <td colspan="2" class="next-step-total-price">NTD 500</td>
+              </tr>
+            </table>
+          </div>
+          <form action="" class="fill-info">
+            <div class="form">
+              <div class="form-name input">
+                <label for="name">姓名</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="form-tel input">
+                <label for="tel">聯絡電話</label>
+                <input type="tel" id="tel" />
+              </div>
+              <div class="form-email input">
+                <label for="email">電子信箱</label>
+                <input type="email" id="email" />
+              </div>
+            </div>
+            <div class="form">
+              <div class="credit-card input">
+                <label for="credit-card">信用卡資料</label>
+                <input type="number" id="credit-card" />
+              </div>
+              <div class="expiry input">
+                <label for="expriy">到期日</label>
+                <input type="number" id="expriy" />
+              </div>
+              <div class="cvv input">
+                <label for="cvv">驗證碼</label>
+                <input type="number" id="cvv" />
+              </div>
+            </div>
+          </form>
+          <div class="step-button">
+            <div class="previous-step-button button">
+              <span>上一步</span>
+            </div>
+            <div class="confirm-button button">
+              <span>確認</span>
+            </div>
           </div>
         </div>
       </section>
@@ -190,5 +262,29 @@
         </div>
       </div>
     </footer>
+    <script>
+      let nextStepBtn = document.querySelector(".next-step-button");
+      let previousStepBtn = document.querySelector(".previous-step-button");
+      nextStepBtn.addEventListener(
+        "click",
+        function () {
+          let ticketBuying = document.querySelector("#ticket-buying");
+          let ticketFillInfo = document.querySelector("#ticket-fill-info");
+          ticketBuying.style.display = "none";
+          ticketFillInfo.style.display = "block";
+        },
+        false
+      );
+      previousStepBtn.addEventListener(
+        "click",
+        function () {
+          let ticketBuying = document.querySelector("#ticket-buying");
+          let ticketFillInfo = document.querySelector("#ticket-fill-info");
+          ticketBuying.style.display = "block";
+          ticketFillInfo.style.display = "none";
+        },
+        false
+      );
+    </script>
   </body>
 </html>
