@@ -1,3 +1,4 @@
+/* general */
 * {
   box-sizing: border-box;
   position: relative;
@@ -17,6 +18,10 @@ body {
   margin: auto;
   padding: 50px 0;
 }
+/* page-title */
+#page-title {
+  width: 100%;
+}
 #page-title .container .title h1 {
   text-align: center;
   font-size: 3em;
@@ -27,6 +32,7 @@ body {
   max-width: 80%;
   margin: auto;
 }
+/* about-us */
 #about-us {
   width: 100%;
 }
@@ -37,7 +43,6 @@ body {
 .about-us-content {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   margin: 50px 0;
 }
 .about-us-content:nth-child(2) {
@@ -49,16 +54,16 @@ body {
 }
 .content h3 {
   font-size: 1.75em;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.05em;
 }
 .content p {
   font-size: 1.25em;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   line-height: 1.5em;
 }
 .pic {
   background-color: #fff;
-  max-width: 40%;
+  max-width: 480px;
 }
 .pic img {
   width: 100%;

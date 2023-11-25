@@ -1,3 +1,4 @@
+/* general */
 * {
   box-sizing: border-box;
   position: relative;
@@ -17,6 +18,10 @@ body {
   margin: auto;
   padding: 50px 0;
 }
+/* page-title */
+#page-title {
+  width: 100%;
+}
 #page-title .container h1 {
   text-align: center;
   font-size: 3em;
@@ -27,22 +32,26 @@ body {
   max-width: 80%;
   margin: auto;
 }
+/* hall-intro */
+
 #hall-intro {
+  width: 100%;
+}
+.banner .pic img {
   width: 100%;
 }
 .hall-intro-content {
   display: flex;
   flex-direction: column;
   margin: 50px 0;
-  /* border: 2px solid red; */
 }
 .intro-content .intro-title {
   text-align: center;
-  font-size: 1.5em;
 }
 .intro-content .intro-title h3 {
   margin: 20px 0 15px 0;
   letter-spacing: 0.1em;
+  font-size: 1.75em;
 }
 .intro-content .intro-para {
   text-align: center;
@@ -52,10 +61,7 @@ body {
   letter-spacing: 0.1em;
   line-height: 1.5em;
 }
-
-.banner .pic img {
-  width: 100%;
-}
+/* features */
 #features {
   width: 100%;
 }
@@ -65,30 +71,30 @@ body {
 }
 .feature-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .feature-card {
-  max-width: 30%;
+  max-width: 35%;
   text-align: center;
 }
 .feature-card .feature-sub-title {
   font-size: 1.5em;
+  letter-spacing: 0.1em;
 }
 .feature-card .feature-para {
   max-width: 80%;
   margin: auto;
   font-size: 1.25em;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   line-height: 1.5em;
 }
+/* hall-info */
 #hall-info {
   width: 100%;
 }
 .info-map-content {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .info-content-table {
   width: 50%;
@@ -110,7 +116,7 @@ body {
 .info-table table {
   height: 100%;
   width: 100%;
-  text-align-last: left;
+  text-align: left;
   border-collapse: collapse;
   font-size: 1.25em;
   letter-spacing: 0.1em;

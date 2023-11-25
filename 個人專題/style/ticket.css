@@ -1,3 +1,4 @@
+/* general */
 * {
   box-sizing: border-box;
   position: relative;
@@ -12,6 +13,12 @@ body {
   display: grid;
   grid-template-rows: 1fr auto;
 }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+/* page-title */
 #page-title .container .title h1 {
   text-align: center;
   font-size: 3em;
@@ -22,16 +29,13 @@ body {
   margin: auto;
   border-bottom: 3px solid #fff;
 }
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 50px 0;
+/* exhibition */
+#exhibition {
+  width: 100%;
 }
-
 .banner .pic img {
   width: 100%;
 }
-
 .exhibition-intro-content {
   display: flex;
   flex-direction: column;
@@ -68,7 +72,6 @@ a {
   border-radius: 5px;
   width: 200px;
   height: 70px;
-  /* text-align: center; */
   padding: 10px 20px;
   color: #fff;
   font-size: 1.25em;
@@ -76,14 +79,13 @@ a {
 .current-step {
   background-color: #c89951;
 }
-.buying-table table {
+table {
   margin: 30px 0;
   width: 100%;
   border-collapse: collapse;
 }
-.buying-table table tr {
+table tr {
   width: 100%;
-
   border-bottom: 1px solid #fff;
 }
 table tr:first-of-type {
@@ -111,6 +113,9 @@ input::-webkit-inner-spin-button {
 .buying-table input {
   width: 50px;
   text-align: center;
+}
+input:focus {
+  outline: none;
 }
 table td,
 th {
@@ -145,42 +150,9 @@ table button {
 #ticket-buying {
   display: block;
 }
-/* next-step */
+/* ticket-fill-info */
 #ticket-fill-info {
   display: none;
-}
-.buying-step {
-  display: flex;
-  justify-content: space-evenly;
-}
-.step {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #292f47;
-  border-radius: 5px;
-  width: 200px;
-  height: 70px;
-  /* text-align: center; */
-  padding: 10px 20px;
-  color: #fff;
-  font-size: 1.25em;
-}
-.current-step {
-  background-color: #c89951;
-}
-.buying-table-info table {
-  margin: 30px 0;
-  width: 100%;
-  border-collapse: collapse;
-}
-.buying-table-info table tr {
-  width: 100%;
-
-  border-bottom: 1px solid #fff;
-}
-.buying-table-info table tr:first-of-type {
-  background-color: #292f47;
 }
 .buying-table-info table tr:nth-of-type(5) {
   background-color: #292f47;
@@ -197,32 +169,24 @@ table button {
   width: 60%;
   text-align: left;
 }
-.buying-table-info table .next-step-ticket-price {
-  text-align: right;
-}
-.buying-table-info table .next-step-total-price {
+.buying-table-info table .next-step-ticket-price,
+.next-step-total-price {
   text-align: right;
 }
 
-.buying-table-info table td,
-th {
-  padding: 15px;
-  font-size: 1.25em;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 .fill-info {
-  padding: 0 0 50px 0;
+  border: 1px solid #fff5;
+  background-color: #292f47;
+  border-radius: 10px;
+  padding: 50px 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.fill-info .step-button {
+.step-button {
   display: flex;
   justify-content: space-between;
+  padding: 50px 0 0 0;
 }
 .form {
   display: flex;
@@ -246,10 +210,7 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   font-size: 1.25em;
 }
-.step-button {
-  display: flex;
-  justify-content: space-between;
-}
+
 .button a {
   display: flex;
   align-items: center;

@@ -1,3 +1,4 @@
+/* general */
 * {
   box-sizing: border-box;
   position: relative;
@@ -12,6 +13,12 @@ body {
   display: grid;
   grid-template-rows: 1fr auto;
 }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+/* page-title */
 #page-title .container .title h1 {
   text-align: center;
   font-size: 3em;
@@ -22,12 +29,7 @@ body {
   margin: auto;
   border-bottom: 3px solid #fff;
 }
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 50px 0;
-}
+/* news */
 #news {
   width: 100%;
 }
@@ -45,7 +47,7 @@ td {
 .news-content td:last-of-type {
   text-align: center;
 }
-.news-content td .more-button a {
+.more-button a {
   font-family: "Sen";
   border-radius: 5px;
   background-color: #c89951;
@@ -54,7 +56,6 @@ td {
   color: #fff;
   font-size: 1em;
 }
-
 .news-content tr {
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;

@@ -1,3 +1,4 @@
+/* general */
 * {
   box-sizing: border-box;
   position: relative;
@@ -17,6 +18,7 @@ body {
   margin: auto;
   padding: 50px 0;
 }
+/* page-title */
 #page-title .container .title h1 {
   text-align: center;
   font-size: 3em;
@@ -27,6 +29,7 @@ body {
   max-width: 80%;
   margin: auto;
 }
+/* outstanding */
 #outstanding {
   width: 100%;
 }
@@ -34,15 +37,15 @@ body {
   font-size: 2.5em;
   letter-spacing: 0.1em;
 }
-.photographer-3-list {
+.photographer-list {
   display: flex;
-  justify-content: space-between;
   margin: 50px 0;
 }
+.photographer-3-list {
+  justify-content: space-between;
+}
 .photographer-2-list {
-  display: flex;
   justify-content: space-evenly;
-  margin: 50px 0;
 }
 .photographer-card .pic {
   background-color: #fff;
@@ -70,6 +73,7 @@ body {
   padding: 10px 0;
   letter-spacing: 0.1em;
 }
+/* newbie */
 #newbie {
   width: 100%;
 }
