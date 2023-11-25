@@ -33,6 +33,7 @@
       </nav>
     </header>
     <main>
+      <!-- page-title -->
       <section id="page-title">
         <div class="container">
           <div class="title">
@@ -40,6 +41,7 @@
           </div>
         </div>
       </section>
+      <!-- exhibiton -->
       <section id="exhibition">
         <div class="container">
           <div class="exhibition-intro">
@@ -95,6 +97,7 @@
           </div>
         </div>
       </section>
+      <!-- ticket-buying -->
       <section id="ticket-buying">
         <div class="container">
           <div class="buying-step">
@@ -149,6 +152,7 @@
           <div class="next-step-button button"><span>下一步</span></div>
         </div>
       </section>
+      <!-- ticket-fill-info -->
       <section id="ticket-fill-info">
         <div class="container">
           <div class="buying-step">
@@ -201,7 +205,14 @@
             <div class="form">
               <div class="credit-card input">
                 <label for="credit-card">信用卡資料</label>
-                <input type="number" id="credit-card" />
+                <input
+                  type="tel"
+                  inputmode="numeric"
+                  pattern="[0-9\s]{13,19}"
+                  autocomplete="cc-number"
+                  maxlength="19"
+                  id="credit-card"
+                />
               </div>
               <div class="expiry input">
                 <label for="expriy">到期日</label>
